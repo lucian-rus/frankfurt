@@ -4,10 +4,10 @@ from modules import request_manager
 ### add json body alteration posibility
 
 # request_single()
-request_manager.request_all(100)
+request_manager.request_data(None)
 res_list = request_manager.get_list()
 
-file = open("frankfurt.csv", "a")
+file = open("./output/frankfurt.csv", "a")
 for item in res_list:
     # print(item)
     file.write(
